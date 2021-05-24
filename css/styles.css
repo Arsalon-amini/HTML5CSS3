@@ -1,7 +1,20 @@
-p {
-    color: orange;
-  }
-
+/* type selectors */
   body {
     margin: 10px;
   }
+
+  /* id selector - only one element per id */
+  #products {
+    background-color:yellow;
+  }
+
+   /* class selector - can have multiple elements w/ same class */
+   .Review {
+     background-color: green;
+   }
+
+     /* attribute selector - code  */
+
+    a[href^="https"][href*="google"] {
+      background-color: red;
+    }
