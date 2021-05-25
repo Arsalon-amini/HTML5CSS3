@@ -106,7 +106,17 @@
       color: deeppink;
     }
 
-    /* id selector - most specific selector*/
+    /* id selector - most specific single selector - 100 score*/
     #name {
       color: green;
+    }
+
+     /* element + id selector - 101 score*/
+     h1#name {
+       color: dodgerblue;
+     }
+
+     /* class + id selector - combined selectors for more specificity- 110 score */
+     .highlight#name {
+      color: deeppink;
     }
