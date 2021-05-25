@@ -5,15 +5,20 @@
 
   /* id selector - only one element per id */
   #products {
-    background-color:yellow;
+    color:yellow;
   }
+
+    /* relational selector  */
+    #products p {
+      color:blue;
+    }
 
    /* class selector - can have multiple elements w/ same class */
    .Review {
      background-color: green;
    }
 
-     /* attribute selector - code  */
+     /* attribute selector  */
 
     a[href^="https"][href*="google"] {
       background-color: red;
