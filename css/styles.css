@@ -23,3 +23,43 @@
     a[href^="https"][href*="google"] {
       background-color: red;
     }
+
+    .first {
+      font-size: 140%;
+      font-style: italic;
+    }
+
+    /* pseudoclass selector -firstChild (fragile)  */
+    article :first-child {
+      font-size: 140%;
+      font-style: italic;
+    }
+
+    /* pseudoclass selector - firstoftype - applied to first elements of type */
+    article :first-of-type {
+      font-size: 140%;
+      font-style: italic;
+    }
+
+     /* pseudoclass selector - firstoftype - applied to first type p in container */
+     article p:first-of-type {
+      font-size: 140%;
+      font-style: italic;
+    }
+
+    article :last-child{
+      font-weight: bold;
+    }
+
+     /* pseudoclass selector - targets all odd elements in unordered list */
+     ul li:nth-child(odd){
+       color: deeppink
+     }
+
+     a:visited, a:link{
+       color: dodgerblue;
+     }
+
+     a:hover, a:focus {
+       color: green;
+     }
