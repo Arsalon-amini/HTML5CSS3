@@ -94,5 +94,19 @@
       display: block;
     }
 
+    /* selector specificity - specific to general (id, class / attribute, elements)*/
 
-    
+    /* element selector - h1 is general and overridden by more specific selectors*/
+    h1 {
+      color: dodgerblue;
+    }
+
+    /* class selector - element is more specific and overrides general selectors*/
+    .highlight {
+      color: deeppink;
+    }
+
+    /* id selector - most specific selector*/
+    #name {
+      color: green;
+    }
