@@ -56,10 +56,43 @@
        color: deeppink
      }
 
+     /* pseudoclass selector */
      a:visited, a:link{
        color: dodgerblue;
      }
 
+    /* pseudoclass selector */
      a:hover, a:focus {
        color: green;
      }
+    
+     /* class selector */
+     .first-letter {
+       font-size: 140%;
+       font-weight: bold;
+     }
+
+     /* pseudo-element selector - sets first letter of H1 to bold*/
+     h1::first-letter{
+      font-size: 140%;
+      font-weight: bold;
+     }
+
+     /* pseudo-element selector - puts first line of paragraph element to bold */
+     p::first-line {
+       font-weight: bold;
+     }
+
+     /* pseudo-element selector - highlight when selecting */
+     ::selection{
+       background-color: pink;
+     }
+
+     /* pseudo-element selector - insert content after element*/
+     p::after{
+      content:"...";
+      display: block;
+    }
+
+
+    
