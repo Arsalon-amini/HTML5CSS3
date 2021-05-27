@@ -191,7 +191,7 @@
 .box9 {
   width: 200px;
   height: 200px;
-  background: linear-gradient(125.06deg,rgb(106, 240, 215) -5.21%, rgb(233, 240, 164) 104.56%)
+  background: linear-gradient(rgba(131,126,205,1) 15%, rgba(0,212,255,1) 43%);
 }
 
    /* Gradient - bottom right start */
@@ -199,4 +199,12 @@
     width: 200px;
     height: 200px;
     background: radial-gradient(circle at top left, dodgerblue, yellow); 
+}
+
+.box{
+  width: 600px;
+  height: 200px;
+  background: dodgerblue;
+  border: 10px solid royalblue; 
+  border-width: 10px 20px 10px 20px; /* tbrl (top, bottom, right, left) */
 }
