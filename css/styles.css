@@ -194,13 +194,14 @@
   background: linear-gradient(rgba(131,126,205,1) 15%, rgba(0,212,255,1) 43%);
 }
 
-   /* Gradient - bottom right start */
+   /* Gradient - */
    .box10 {
     width: 200px;
     height: 200px;
     background: radial-gradient(circle at top left, dodgerblue, yellow); 
 }
 
+ /* Borders - */
 .box{
   width: 600px;
   height: 200px;
@@ -208,3 +209,28 @@
   border: 10px solid royalblue; 
   border-width: 10px 20px 10px 20px; /* tbrl (top, bottom, right, left) */
 }
+
+   /* Shadows */
+   .box11 {
+    width: 200px;
+    height: 200px;
+    background: dodgerblue; 
+    box-shadow: 10px 10px 10px grey; /* right, down, blur, color */
+}
+
+  /* Shadows */
+  .box12 {
+    width: 200px;
+    height: 200px;
+    background: dodgerblue; 
+    box-shadow: 0 0 10px grey; /* right, down, blur, color */
+}
+
+h1{
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.2); 
+}
+
+
+
+
