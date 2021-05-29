@@ -1,0 +1,21 @@
+
+.bday {
+    width: 300px;
+    height: 50px;
+    background: linear-gradient(rgba(131,126,205,1) 15%, rgba(0,212,255,1) 43%);
+    box-shadow: 5px 5px grey;
+    column-span: 2;
+}
+
+h1 {
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    color:black
+}
+
+h2 {
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.2)
+}
+
+table, th {
+    background-color: green;
+}
