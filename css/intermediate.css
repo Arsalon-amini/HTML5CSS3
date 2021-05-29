@@ -1,4 +1,9 @@
 
+/* Universal Selector - apply sizing border-box to all HTML elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Box Model - Margins and Padding*/
 p {
     padding: 20px; /*top, right, bottom, left (trbl) */
@@ -17,7 +22,9 @@ p {
     width: 100px;
     height: 100px;
     background: gold;
-    padding: 20px;
-    border: 10px solid blue;
-    box-sizing: border-box;
+    display: inline-block
+}
+
+.box::before{
+    content: "hello"; 
 }
