@@ -1,5 +1,5 @@
 
-/* Box Model */
+/* Box Model - Margins and Padding*/
 p {
     padding: 20px; /*top, right, bottom, left (trbl) */
     border: 5px solid gold;
@@ -9,4 +9,15 @@ p {
 .example {
     margin: 20px;
     padding: 20px;
+}
+
+/* Sizing Elements */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: gold;
+    padding: 20px;
+    border: 10px solid blue;
+    box-sizing: border-box;
 }
