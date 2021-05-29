@@ -35,3 +35,32 @@ p {
     height: 150px;
     overflow: hidden auto;
 }
+
+.boxAbsolute {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+/* % of parent element */
+.boxRelative {
+    width: 50%; /* vw are view-width */
+    height: 100vh; /* vh view-height ex. 100% of viewport (available screen) */
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+
+/* em units - ex. 10em = 10x font size of current element -> 10 x 16px (default) = 160px*/
+.boxText {
+    width: 10em;
+    height: 50vh;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+body {
+    margin: 10px;
+    width: 300px;
+}
