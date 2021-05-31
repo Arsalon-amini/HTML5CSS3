@@ -5,9 +5,7 @@
     flex-direction: row;
     justify-content: center; /* align item along primary axis (horizontal = row primary axis)*/
     align-items: center; /* align item along cross axis (vertical)*/
-    height: 90vh;
-    flex-wrap: wrap;
-    align-content: center; /* align multiple content lines in container*/
+    height: 30vh; /* 80% of viewport height (screen height) */
 }
 
 .box {
@@ -15,4 +13,21 @@
     height: 5rem;
     background: gold;
     margin: 1rem;
+}
+
+
+/* self - aligment */ 
+
+.box-one {
+    align-self: flex-start; /* ovver rides align-items */ 
+    flex-basis: 12rem; /* ovver rides width property */ 
+}
+
+.box-two {
+    flex-grow: 1; /* ovver rides width property */ 
+}
+
+.box-three {
+    align-self: flex-start; 
+    flex-basis: 15rem;
 }

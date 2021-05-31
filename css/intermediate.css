@@ -154,3 +154,22 @@ body {
 .clear {
     clear: both;
 }
+
+/* Flexible Box layout (flex) - vertical and horizontal alignment */
+.container {
+    border: 3px solid lightgrey; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* align item along primary axis (horizontal = row primary axis)*/
+    align-items: center; /* align item along cross axis (vertical)*/
+    height: 80vh; /* 80% of viewport height (screen height) */
+    flex-wrap: wrap; /* all elements to cover multiple lines if screen changes size*/
+    align-content: center; /* align multiple content lines in container*/
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+}
