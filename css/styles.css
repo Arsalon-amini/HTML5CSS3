@@ -1,49 +1,7 @@
-/* Positing Elements */
-body {
-    height: 200vh;
-    margin: 10px;
-}
-
-.boxes {
-    border: 3px solid lightgrey;
-    position: relative; /* Must be set to relative to position elements relative to container */
-}
-
-.box {
+.avatar {
     width: 5rem;
     height: 5rem;
-}
-
-/* Positioned relative to the element's normal position */
-.box-one {
-    background: gold;
-    position: relative;
-    left: 30rem;
-}
-
-/* Absolute relative to parent (container element) */
-.box-two {
-    background: tomato;
-    position: absolute;
-    left: 4rem; /* adds 65 px space on left between container and element */
-    top: 1rem;
-}
-
-/* fixed - relative to viewport - auto sizing using only left/right spacing */
-.box-three {
-    background: dodgerblue;
-    position: fixed;
-    left: 2rem;
-    right: 2rem;
-    width: auto;
-}
-
-/* Sticky Header Navigation Bar - fixed position relative to viewport */
-.box-four{
-    background: linear-gradient( blue, yellow);
-    position: fixed;
-    width: 200px;
-    top: 0;
-    left: 10rem;
-    z-index: 1;
+    background-color: gold;
+    float: left; 
+    margin-right: 0.5rem;
 }
