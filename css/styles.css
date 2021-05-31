@@ -1,6 +1,7 @@
 /* Positing Elements */
 .boxes {
     border: 3px solid lightgrey;
+    position: relative; /* Must be set to relative to position elements relative to container */
 }
 
 .box {
@@ -22,4 +23,7 @@
 
 .box-three {
     background: dodgerblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
