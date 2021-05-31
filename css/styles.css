@@ -1,25 +1,18 @@
-/* Floating elements - allows other elements to wrap around */
-.avatar {
+/* Flexible Box layout (flex) - vertical and horizontal alignment */
+.container {
+    border: 3px solid lightgrey; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* align item along primary axis (horizontal = row primary axis)*/
+    align-items: center; /* align item along cross axis (vertical)*/
+    height: 90vh;
+    flex-wrap: wrap;
+    align-content: center; /* align multiple content lines in container*/
+}
+
+.box {
     width: 5rem;
     height: 5rem;
-    background-color: gold;
-    float: left; 
-    margin-right: 0.5rem;
-}
-
-/* Floating elements - by default are ignored by parent elements */
-.tweet {
-    border: 3px solid lightgrey; 
-}
-
-/* Solves floating elements ignored by parent containers*/
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-/* clear - removes float properties for other elements in container  */
-.clear {
-    clear: both;
+    background: gold;
+    margin: 1rem;
 }
