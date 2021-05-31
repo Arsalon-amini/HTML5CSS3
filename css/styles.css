@@ -1,4 +1,9 @@
 /* Positing Elements */
+body {
+    height: 200vh;
+    margin: 10px;
+}
+
 .boxes {
     border: 3px solid lightgrey;
     position: relative; /* Must be set to relative to position elements relative to container */
@@ -11,6 +16,8 @@
 
 .box-one {
     background: gold;
+    position: relative;
+    top: 3rem;
 }
 
 .box-two {
@@ -23,7 +30,15 @@
 
 .box-three {
     background: dodgerblue;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
+}
+
+.box-four{
+    background: linear-gradient( blue, yellow);
+    position: fixed;
+    width: 200vh;
+    top: 0;
+    z-index: 1;
 }
