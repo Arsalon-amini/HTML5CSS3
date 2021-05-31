@@ -9,25 +9,16 @@
 }
 
 .box {
-    width: 5rem;
+    flex-basis: 15rem; /* maintains width (overrides width) as screen changes*/
+    flex-shrink: 1; /* as screen changes size, elements will shrink at same rate */ 
+    flex-grow: 1; /* allocates 1 units of available space to this element as screen grows */ 
+    flex: 1 1 15rem;  /* 1. flex-grow 2. flexshrink/flexbasis 3. flexbasis */
+    width: 15rem;
     height: 5rem;
     background: gold;
     margin: 1rem;
 }
 
 
-/* self - aligment */ 
 
-.box-one {
-    align-self: flex-start; /* ovver rides align-items */ 
-    flex-basis: 12rem; /* ovver rides width property */ 
-}
 
-.box-two {
-    flex-grow: 1; /* ovver rides width property */ 
-}
-
-.box-three {
-    align-self: flex-start; 
-    flex-basis: 15rem;
-}
