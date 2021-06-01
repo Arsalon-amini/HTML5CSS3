@@ -6,6 +6,7 @@
 .container {
     display: grid;
     grid-template-rows: 100px 100px 100px; /* 3 rows 100px tall each */
-    grid-template-columns: 100px 100px; /* 2 columns 100px tall each */
+    grid-template-columns: repeat(2, 100px); /* creates 2 columns, 100px each */
+    grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand - 3 rows & 3 columns */
     border: 3px solid lightgray; 
 }
