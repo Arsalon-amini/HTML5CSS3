@@ -208,3 +208,17 @@ body {
     height: 100vh;
 }
 
+/* Grid - placing items in layout */
+.container {
+    display: grid;
+    grid-template: 100px auto 100px / 30fr 70fr; /* 3rows(100px auto [grows entire avail space] 100px && 2 col (30% avail space, 70% avail space) */
+    gap: 10px; /* shorthand 10px row-gap and 10px column-gap */
+    border: 3px solid lightgray; 
+    height: 100vh;
+   
+}
+
+.box-one{
+    grid-column: 1 / 3; /* start at line 1 end line 3 or 1/span 2 (spans 2 grid containers) */
+    grid-row: 2 / span 2; 
+}
