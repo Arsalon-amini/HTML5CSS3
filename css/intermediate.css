@@ -250,3 +250,36 @@ body {
     background-color: blue;
     grid-area: footer;
 }
+
+
+/* Mobile first design - set default style to look good on mobile */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    background: gold; 
+    padding: 1rem; 
+}
+
+.box:nth-of-type(2){
+    background: blue;
+}
+
+/* Use media queries to update styles for larger screen sizes */
+/* Media Query - if screen greater than 600px, overrides previous styles and applies this new styling */
+@media screen and (min-width: 600px){
+    .container {
+        flex-direction: row; /* lays out boxes horizontal after break point*/
+    }
+}
+/* if screen is larger than 900px, apply this style */
+@media screen and (min-width: 900px){
+    .container {
+        flex-direction: row; /* lays out boxes horizontal after break point*/
+    }
+    .box {
+        background: green;
+    }
+}
