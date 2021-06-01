@@ -5,8 +5,17 @@
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 100px; /* 3 rows 100px tall each */
-    grid-template-columns: repeat(2, 100px); /* creates 2 columns, 100px each */
     grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand - 3 rows & 3 columns */
     border: 3px solid lightgray; 
+    justify-items: center; /* center of horizontal axis*/
+    align-items: center; /* center of vertical axis */
+    justify-content: center; /* aligns grid in container along horizontal axis*/
+    align-content: center; /* aligns grid along vertical axis in container */ 
+    height: 100vh;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: gold; 
 }
