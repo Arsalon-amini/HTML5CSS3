@@ -195,3 +195,16 @@ body {
     margin: 1rem;
 }
 
+/* Grid */
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(2, 100px); /* shorthand - 3 rows & 3 columns */
+    border: 3px solid lightgray; 
+    justify-items: center; /* center of horizontal axis*/
+    align-items: center; /* center of vertical axis */
+    justify-content: center; /* aligns grid in container along horizontal axis*/
+    align-content: center; /* aligns grid along vertical axis in container */ 
+    height: 100vh;
+}
+
