@@ -1,32 +1,32 @@
 
-
-
-/* Grid */
-
+/* Mobile first design - set default style to look good on mobile */
 .container {
-    display: grid;
-    grid-template: 100px auto 100px / 30fr 70fr; /* 3rows(100px auto [grows entire avail space] 100px && 2 col (30% avail space, 70% avail space) */
-    grid-template-areas: 
-    "header  header" 
-    "sidebar  main" 
-    "footer   footer"; 
-    gap: 10px; 
-    border: 3px solid lightgray; 
-    height: 100vh;
-   
+    display: flex;
+    flex-direction: column;
 }
 
 .box {
-     background-color: gold;
+    background: gold; 
+    padding: 1rem; 
 }
 
-.box-two{
-    background-color: green;
-    grid-area: main;
+.box:nth-of-type(2){
+    background: blue;
 }
 
-.box-one{
-    background-color: blue;
-    grid-area: footer;
+/* Use media queries to update styles for larger screen sizes */
+/* Media Query - if screen greater than 600px, overrides previous styles and applies this new styling */
+@media screen and (min-width: 600px){
+    .container {
+        flex-direction: row; /* lays out boxes horizontal after break point*/
+    }
 }
-
+/* if screen is larger than 900px, apply this style */
+@media screen and (min-width: 900px){
+    .container {
+        flex-direction: row; /* lays out boxes horizontal after break point*/
+    }
+    .box {
+        background: green;
+    }
+}
