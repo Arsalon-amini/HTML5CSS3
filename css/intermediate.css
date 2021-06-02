@@ -331,10 +331,9 @@ h1 {
     font-family: Roboto, Arial, Helvetica, sans-serif; /* Roboto Google font */
 }
 
-/* styling fonts */
-p {
-    font-style: normal; /* makes font italic */
-    font-size: 1rem; /* can use absolute values too like 30px */
-    color: #444; /* font color #444 (dark grey) */
+/* OS System Font Stack - modern, don't need to download */
+body {
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
