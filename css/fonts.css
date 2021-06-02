@@ -1,15 +1,36 @@
-/* fonts */
+/* font face to register a custom font in our app, then can use regularly  */
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+
+/* websafe fonts */
 body {
     margin: 10px;
-    font-family: Arial, Helvetica, sans-serif; /* apply font stack to body element so all components inherit*/
+    font-family: 'opensans', Arial, Helvetica, sans-serif; /* apply font stack to body element so all components inherit*/
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif; /* changes font for header section */
 }
 
+/* styling fonts */
 p {
     font-style: italic; /* makes font italic */
     font-size: 1rem; /* can use absolute values too like 30px */
     color: #444; /* font color #444 (dark grey) */
 }
+

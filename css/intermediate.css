@@ -283,3 +283,20 @@ body {
         background: green;
     }
 }
+
+/* websafe fonts */
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif; /* apply font stack to body element so all components inherit*/
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* changes font for header section */
+}
+
+/* styling fonts */
+p {
+    font-style: italic; /* makes font italic */
+    font-size: 1rem; /* can use absolute values too like 30px */
+    color: #444; /* font color #444 (dark grey) */
+}
