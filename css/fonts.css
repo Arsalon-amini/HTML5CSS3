@@ -5,6 +5,7 @@
          url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: optional; /* window to download custom font, otherwise use fallback, on subsequent page loads, use custom font downloaded behind scenes */
 
 }
 @font-face {
@@ -20,7 +21,7 @@
 /* websafe fonts */
 body {
     margin: 10px;
-    font-family: 'opensans', Arial, Helvetica, sans-serif; /* apply font stack to body element so all components inherit*/
+    font-family: "opensans", Arial, Helvetica, sans-serif; /* apply font stack to body element so all components inherit*/
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
 
 /* styling fonts */
 p {
-    font-style: italic; /* makes font italic */
+    font-style: normal; /* makes font italic */
     font-size: 1rem; /* can use absolute values too like 30px */
     color: #444; /* font color #444 (dark grey) */
 }
