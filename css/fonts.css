@@ -7,3 +7,9 @@ body {
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif; /* changes font for header section */
 }
+
+p {
+    font-style: italic; /* makes font italic */
+    font-size: 1rem; /* can use absolute values too like 30px */
+    color: #444; /* font color #444 (dark grey) */
+}
