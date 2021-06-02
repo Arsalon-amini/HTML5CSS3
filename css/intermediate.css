@@ -284,10 +284,10 @@ body {
     }
 }
 
-/* websafe fonts */
+/* websafe fonts - basic, elementary, available for 20 years on all computers */
 body {
     margin: 10px;
-    font-family: Arial, Helvetica, sans-serif; /* apply font stack to body element so all components inherit*/
+    font-family: Arial, Helvetica, sans-serif; /* apply websafe font stack to body element so all components inherit*/
 }
 
 h1 {
@@ -296,7 +296,45 @@ h1 {
 
 /* styling fonts */
 p {
+    font-family: "opensans"; /* custom app font */
     font-style: italic; /* makes font italic */
     font-size: 1rem; /* can use absolute values too like 30px */
     color: #444; /* font color #444 (dark grey) */
 }
+
+/* font face to register a custom font in our app, then can use regularly  */
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional; /* window to download custom font, otherwise use fallback, on subsequent page loads, use custom font downloaded behind scenes */
+
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+/* Google Fonts */
+body {
+    margin: 10px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif; /* Google fonts */
+}
+
+h1 {
+    font-family: Roboto, Arial, Helvetica, sans-serif; /* Roboto Google font */
+}
+
+/* styling fonts */
+p {
+    font-style: normal; /* makes font italic */
+    font-size: 1rem; /* can use absolute values too like 30px */
+    color: #444; /* font color #444 (dark grey) */
+}
+
