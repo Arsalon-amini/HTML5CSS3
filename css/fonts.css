@@ -8,7 +8,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     line-height: 1.5; /*multiplier - times font size (keeps consistency) */
-    word-spacing: 5px;
+    word-spacing: 5px; /* makes words further apart */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,5 +18,11 @@ h1, h2, h3, h4, h5, h6 {
 /* vertical spacing - makes H1 closer to body text */
 h1{
     margin: 3rem 0 1rem; /* trbl (top, right, bottom, left) */
-    letter-spacing: -1px;
+    letter-spacing: -1px; /* makes letters closer */
 }
+
+/* ideal line length */
+p {
+    width: 50ch; /* ch = width of 0 character - Ex. 50 ch = 50x0 char */
+}
+
