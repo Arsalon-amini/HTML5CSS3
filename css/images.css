@@ -1,4 +1,11 @@
 /* Images CSS */
 
-/* Filters - blur, greyscale,  */
+/* Scaleable vector graphic (SVG) icons, logos, backgrounds  */
+body{
+    background: url(/images/constellation.svg);
+}
+
+.ufo{
+    width: 50vw;
+}
 

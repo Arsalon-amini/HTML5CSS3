@@ -22,5 +22,16 @@
       (max-width: 700px) 50vw,
       33vw"
     />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="/images/meal.webp 1x, /images/meal@2x 2x, /images/meal@3x 3x"
+      />
+      <source type="image/jpeg" srcset="/images/meal.jpg" />
+      <img
+        src="/images/meal.jpg"
+        alt="A delicious meal, always include for browswers not supporting Picture element"
+      />
+    </picture>
   </body>
 </html>
