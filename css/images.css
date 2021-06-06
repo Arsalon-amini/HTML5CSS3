@@ -7,4 +7,40 @@ body {
     height: 300vh;
 }
 
+/* CSS Sprites */
 
+.bg-saturn {
+    width: 100px; 
+    height: 100px;
+    background: url('/images/bg-sprites.png') -0 -0;
+    display: inline-block
+}
+
+.bg-dishes {
+    background: url("/images/bg-sprites.png") -100px -0;
+    width: 100px;
+    height: 100px;
+    display: inline-block
+}
+
+.bg-landing {
+    background: url("/images/bg-sprites.png") -0 -100px;
+    width: 100px;
+    height: 100px;
+    display: inline-block
+}
+
+.bg-rocketship {
+    background: url("/images/bg-sprites.png") -100px -100px;
+    width: 100px;
+    height: 100px;
+    display: inline-block
+}
+
+
+.bg-ufo {
+    background: url("/images/bg-sprites.png") -200px -0;
+    width: 100px;
+    height: 100px;
+    display: inline-block
+}
