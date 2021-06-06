@@ -1,0 +1,9 @@
+/* Images CSS */
+/*  */
+
+body {
+    background: url(/images/bg-paper.jpg);
+    background-repeat: no-repeat; /* repeat background only in x direction (horizontally)  */
+    background-size: 100% 200px; /* width, height also use "cover" to cover entire container*/
+}
+

@@ -398,3 +398,23 @@ h1{
 p {
     width: 50ch; /* ch = width of 0 character - Ex. 50 ch = 50x0 char */
 }
+
+/* formatting text */
+p {
+    width: 50ch; /* ch = width of 0 character - Ex. 50 ch = 50x0 char */
+    text-align: center;
+    text-indent: 1rem;
+    text-decoration: line-through; /* strike through - showing prices no longer valid */
+    text-transform: capitalize; /* capitalize every word - good for headings*/
+    column-count: 2; /* makes text into two columns */
+    column-gap: 2rem; 
+    column-rule: 3px dotted #999;
+
+}
+
+/* Images CSS */
+
+body {
+    background: url(/images/bg-paper.jpg);
+    background-repeat: repeat-x; /* repeat background only in x direction (horizontally)  */
+}
