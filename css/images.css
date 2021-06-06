@@ -1,9 +1,9 @@
 /* Images CSS */
-/*  */
-
 body {
-    background: url(/images/bg-paper.jpg);
-    background-repeat: no-repeat; /* repeat background only in x direction (horizontally)  */
-    background-size: 100% 200px; /* width, height also use "cover" to cover entire container*/
+    background: url(/images/bg-sanfrancisco.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; /* keeps background fixed in viewport */
+    height: 300vh;
 }
 
