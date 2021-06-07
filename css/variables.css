@@ -1,0 +1,14 @@
+/* Extract repeative properties into custom CSS variables, inherited by all DOM elements */
+:root {
+    --color-primary: #ffdd36;
+    --border-size: 2px;
+    --border-radius: 10px;
+}
+
+.one {
+    background: #ffdd36;
+}
+
+.one {
+    background: var(--color-primary);
+}
